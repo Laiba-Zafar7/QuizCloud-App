@@ -77,49 +77,27 @@
 
 ## 📸 Screenshots
 
-> 📷 Take screenshots of your app using **Windows + Shift + S**, save them in a `screenshots/` folder, then uncomment the image lines below!
-
 ### 🏠 Landing Page
 ![Landing Page](screenshots/landing.png)
-```
-📷 screenshots/landing.png
-```
 
 ### 🎓 Teacher Dashboard
-![Landing Page](screenshots/teacher-dashboard.png)
-```
-📷 screenshots/teacher-dashboard.png
-```
+![Teacher Dashboard](screenshots/teacher-dashboard.png)
 
 ### 📝 Quiz Builder
-![Landing Page](screenshots/quiz-builder.png)
-```
-📷 screenshots/quiz-builder.png
-```
+![Quiz Builder](screenshots/quiz-builder.png)
 
 ### 📚 Student Dashboard
-![Landing Page](screenshots/student-dashboard.png)
-```
-📷 screenshots/student-dashboard.png
-```
+![Student Dashboard](screenshots/student-dashboard.png)
 
 ### ⏱️ Live Quiz Engine
-![Landing Page](screenshots/quiz-attempt.png)
-```
-📷 screenshots/quiz-attempt.png
-```
+![Live Quiz](screenshots/quiz-attempt.png)
 
 ### 🏆 Leaderboard
-![Landing Page](screenshots/leaderboard.png)
-```
-📷 screenshots/leaderboard.png
-```
+![Leaderboard](screenshots/leaderboard.png)
 
 ### 📊 Results & Analytics
-![Landing Page](screenshots/results.png)
-```
-📷 screenshots/results.png
-```
+![Results](screenshots/results.png)
+
 
 ---
 
