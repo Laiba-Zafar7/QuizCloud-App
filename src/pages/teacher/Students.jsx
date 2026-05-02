@@ -126,11 +126,11 @@ export default function Students() {
   // ── Filter students ──────────────────────────────────────────
   const filtered = students.filter((student) => {
     const stats = getStudentStats(student.id);
-    // const status = getStatus(stats.avgScore, stats.attempted);
+    
 
     // eslint-disable-next-line no-unused-vars
 
-    const status = getStatus(stats.avgScore, stats.attempted);
+    // const status = getStatus(stats.avgScore, stats.attempted);
 
     const matchSearch =
       student.name?.toLowerCase().includes(search.toLowerCase()) ||
