@@ -4,20 +4,20 @@ import "../../../styles/student/quiz/attemptquiz.css";
 export default function QuizTimer({ totalMinutes, onTimeUp }) {
   const [secondsLeft, setSecondsLeft] = useState(totalMinutes * 60);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSecondsLeft((prev) => {
-        if (prev <= 1) {
-          clearInterval(interval);
-          onTimeUp();
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
+ useEffect(() => {
+  const interval = setInterval(() => {
+    setSecondsLeft((prev) => {
+      if (prev <= 1) {
+        clearInterval(interval);
+        onTimeUp();
+        return 0;
+      }
+      return prev - 1;
+    });
+  }, 1000);
 
-    return () => clearInterval(interval);
-  }, []);
+  return () => clearInterval(interval);
+}, [onTimeUp]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Format time as MM:SS
   const minutes = Math.floor(secondsLeft / 60);

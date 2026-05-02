@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { doc, updateDoc } from "firebase/firestore";
-import { updatePassword, updateEmail } from "firebase/auth";
+// import { updatePassword, updateEmail } from "firebase/auth";
+import { updatePassword } from "firebase/auth";
 import { db, auth } from "../../firebase/config";
 import { useAuth } from "../../context/AuthContext";
 import Sidebar from "../../components/teacher/Sidebar";

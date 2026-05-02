@@ -61,7 +61,7 @@ export default function AttemptQuiz() {
     }
 
     fetchQuiz();
-  }, [quizId]);
+}, [quizId]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Anti Cheat — Tab Switch Detection ───────────────────────
   useEffect(() => {
@@ -85,7 +85,7 @@ export default function AttemptQuiz() {
     document.addEventListener("visibilitychange", handleVisibilityChange);
     return () =>
       document.removeEventListener("visibilitychange", handleVisibilityChange);
-  }, [answers]);
+ }, [answers]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Answer Handler ───────────────────────────────────────────
   function handleAnswer(answer) {

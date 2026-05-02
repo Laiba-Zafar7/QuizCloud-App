@@ -7,7 +7,8 @@ import toast from "react-hot-toast";
 import "../../styles/student/leaderboard.css";
 
 export default function Leaderboard() {
-  const { currentUser, userProfile } = useAuth();
+  
+  const { currentUser } = useAuth();
 
   const [quizzes, setQuizzes] = useState([]);
   const [selectedQuiz, setSelectedQuiz] = useState("");

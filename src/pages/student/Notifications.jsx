@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import {
   collection,
-  query,
   getDocs,
   doc,
   updateDoc,
-  orderBy,
 } from "firebase/firestore";
 import { db } from "../../firebase/config";
 import { useAuth } from "../../context/AuthContext";
@@ -14,7 +12,8 @@ import toast from "react-hot-toast";
 import "../../styles/notifications.css";
 
 export default function StudentNotifications() {
-  const { currentUser, userProfile } = useAuth();
+  // const { currentUser, userProfile } = useAuth();
+  const { currentUser } = useAuth();
 
   const [notifications, setNotifications] = useState([]);
   const [loading, setLoading] = useState(true);
